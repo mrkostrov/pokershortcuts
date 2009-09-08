@@ -38,16 +38,17 @@ Added Critical to BetAmountSet and Get in version 4.0030    needed ????
 Update Images:  Misc ab, 
 doc:  Misc tab, removed reg tab
 
-4.0032
+4.0032   9/8/09
 1. Poker Shortcuts is now an open source program, licensed under GNU GPL version 3. See the license.txt for more info.
-2. If you would like to work on this project, the open source project is located here: http://code.google.com/p/pokershortcuts/
-3. Changed the table left, right, up, and down functions to Xander's open source code (more robust than the code used previously in Shortcuts).
-4. Fixed problem where sometimes the fold button would be clicked on the top table and the fold button on the table below it. This problem was introduced in 4.0031.
-5. Fixed problem where the "Seat Available" dialog box was not being closed (only a problem for a few users). Some users have a different dialog box size.
-6. Added checkbox on Misc tab "Use Mouse Movement method to click buttons on Full Tilt". If you are having problem where you see mouse movement when buttons are clicked on Full Tilt, then uncheck this box. Unchecking this will use the method of clicking FT buttons that was used in version 4.0029. Some users have reported that this methods works better for them.
+2. Source code is not included in the file source.zip
+3. If you would like to work on this project, the open source project is located here: http://code.google.com/p/pokershortcuts/
+4. Changed the table left, right, up, and down functions to Xander's open source code (more robust than the code used previously in Shortcuts).
+5. Fixed problem where sometimes the fold button would be clicked on the top table and the fold button on the table below it. This problem was introduced in 4.0031.
+6. Fixed problem where the "Seat Available" dialog box was not being closed (only a problem for a few users). Some users have a different dialog box size.
+7. Added checkbox on Misc tab "Use Mouse Movement method to click buttons on Full Tilt". If you are having problem where you see mouse movement when buttons are clicked on Full Tilt, then uncheck this box. Unchecking this will use the method of clicking FT buttons that was used in version 4.0029. Some users have reported that this methods works better for them.
 
 
-4.0031
+4.0031 8/16/09
 1. Fixed problem where the Full Tilt Time button was not being detected at tables with a size of around 600-650 pixels wide
 2. Fixed problem with the detection of the Full Tilt Fold button.
 3. Fixed problem where focus are being taken away from other programs (when certain actions happened on the table, like clicking the Time button).
