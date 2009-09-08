@@ -17,4 +17,4 @@ Poker Shortcuts is an AutoHotKey program that makes it easier to play multiple t
 
 [http://forumserver.twoplustwo.com/45/software/poker-shortcuts-software-makes-playing-poker-stars-full-tilt-poker-easier-483764/ Support Forum on 2+2]
 
-[http://www.windyhilltech.com/poker/ps/specialthanks.php Special Thanks]
+[http://www.windyhilltech.com/poker/ps/specialthanks.html Special Thanks]
