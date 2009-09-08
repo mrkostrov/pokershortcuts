@@ -1,0 +1,20 @@
+#summary Introduction page for Poker Shortcuts.
+
+= Introduction =
+
+Poker Shortcuts is an AutoHotKey program that makes it easier to play multiple tables on Full Tilt Poker and Poker Stars. This program add hundreds of hotkeys and macros to help perform common tasks on these poker sites.
+
+
+= Documentation =
+
+[http://www.windyhilltech.com/poker/ps/description.php Description]
+
+[http://www.windyhilltech.com/poker/ps/config.php Configuration]
+
+[http://www.windyhilltech.com/poker/ps/trouble.php Troubleshooting]
+
+[http://www.windyhilltech.com/poker/ps/index.php Main Documentation]
+
+[http://forumserver.twoplustwo.com/45/software/poker-shortcuts-software-makes-playing-poker-stars-full-tilt-poker-easier-483764/ Support Forum on 2+2]
+
+[http://www.windyhilltech.com/poker/ps/specialthanks.php Special Thanks]
