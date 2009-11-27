@@ -540,7 +540,7 @@ DialogCloseQWidget(WinId)
    local CYSIZEFRAME, WindowW, X, Y
    
    ; list all the possible dialog widths ************   UPDATE THIS AS YOU ADD MORE DIALOG BOX CLOSINGS
-   DialogWidthList := "265,267,268,286,287,330,,332,400,441,500,682"   
+   DialogWidthList := "265,267,268,286,287,330,,332,338,400,441,500,690"   
   
    
    WinGetTitle, DialogTitle, ahk_id%WinId%
@@ -779,6 +779,10 @@ outputdebug, in DialogWidth330
 
 return
 
+; Tournament: Unregister successful, has just an "OK" button
+DialogWidth338:
+	winclose, ahk_id %WinId%
+return
 
 
 ; Sng: You finished the tournament
@@ -866,7 +870,7 @@ Return
   
 ; Tournament Buy-in
 ;QWidget   682x268     buyin:  172x147        Title:  Tournament Buy-In - xxxxxtournamentnumberxxxx - xxxxx  
-DialogWidth682: 
+DialogWidth690: 
  
    if (instr(DialogTitle,"Tournament Buy-in -"))
    {
@@ -891,11 +895,29 @@ DialogWidth682:
                MouseClickXYLocation(X,Y,WinId)            
             }
             ; else real money table
+			; try buying in w/ Token
             {          
-               X := 170
-               Y := 120
-               MouseClickXYLocation(X,Y,WinId)
+               X := 260
+               Y := 160
+			   MouseClickXYLocation(X,Y,WinId)
             }
+			; try buying in w/ T$
+			{          
+               X := 260
+               Y := 130
+			   MouseClickXYLocation(X,Y,WinId)
+            }
+			; try buying in w/ $
+			{          
+               X := 260
+               Y := 100
+			   MouseClickXYLocation(X,Y,WinId)
+            }
+			if MinimizeSngLobbyEnabled {
+				sleep, 200
+				WinId := WinExist("A")
+				LobbyTournamentMinimize(WinId)
+			}
          }
    }
    else
@@ -1332,16 +1354,16 @@ DialogCloseDelayed(WinId)
          ; close the dialog box by clicking on "NO" we don't want to play another tournament, and the table if the above is enabled
          ;ControlClick, QWidget3, ahk_id %vDialogId%,,,,NA
          ; play money sngs
-         X := 245
-         Y := 170
-         MouseClickXYLocation(X,Y,WinId)
+         ; X := 245
+         ; Y := 170
+         ; MouseClickXYLocation(X,Y,WinId)
          
-         ; real money sngs
-         X := 245
-         Y := 130
-         MouseClickXYLocation(X,Y,WinId)
+         ;real money sngs
+         ; X := 245
+         ; Y := 130
+         ; MouseClickXYLocation(X,Y,WinId)
          
-
+		WinClose, ahk_id%WinId%
          ;WinWaitClose, ahk_id %vDialogId%,,2
 
          vCloseDialogTime := 0
