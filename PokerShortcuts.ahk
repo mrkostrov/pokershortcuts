@@ -669,7 +669,7 @@ Loop
 
 
 
-      MsgBox,4096,, %Msg18%
+      ;MsgBox,4096,, %Msg18%
 
    if NOT A_IsAdmin
    {
