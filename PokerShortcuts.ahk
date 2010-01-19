@@ -453,8 +453,9 @@ StartUp:
 ;   GroupAdd, Tables, ahk_class FTC_TableViewFull
    GroupAdd, Tables, ahk_class PokerStarsTableFrameClass
    GroupAdd, Tables, - Logged In As ahk_class QWidget,,,Full Tilt Poker -
+   GroupAdd, Tables, -  Logged In As ahk_class QWidget,,,Full Tilt Poker -
 
-
+   
    GroupAdd, FTTables, - Logged In As ahk_class QWidget,,,Full Tilt Poker -
    GroupAdd, PSTables, ahk_class PokerStarsTableFrameClass
    
