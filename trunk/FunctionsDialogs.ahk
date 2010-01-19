@@ -540,7 +540,7 @@ DialogCloseQWidget(WinId)
    local CYSIZEFRAME, WindowW, X, Y
    
    ; list all the possible dialog widths ************   UPDATE THIS AS YOU ADD MORE DIALOG BOX CLOSINGS
-   DialogWidthList := "265,267,268,286,287,330,,332,338,400,441,500,690"   
+   DialogWidthList := "265,267,268,290,287,330,,332,338,400,441,500,690"   
   
    
    WinGetTitle, DialogTitle, ahk_id%WinId%
@@ -662,7 +662,8 @@ Return
 
 
 ; Get Chips Dialog box - QWidget
-DialogWidth286:
+DialogWidth290:
+msgbox found
 ;outputdebug, here1
       if (DialogTitle == "Get Chips")
       {
