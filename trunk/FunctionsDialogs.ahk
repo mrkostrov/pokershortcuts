@@ -663,7 +663,6 @@ Return
 
 ; Get Chips Dialog box - QWidget
 DialogWidth290:
-msgbox found
 ;outputdebug, here1
       if (DialogTitle == "Get Chips")
       {
